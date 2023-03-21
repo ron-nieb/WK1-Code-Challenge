@@ -1,5 +1,5 @@
 //Student Grade Generator//
-let marks = prompt("Please enter the student's marks (0-100):");
+let marks = 55
 
 if (marks > 100 || marks < 0) {
   console.log("Invalid input. Marks should be between 0 and 100.");
