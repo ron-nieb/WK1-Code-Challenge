@@ -1,16 +1,22 @@
 //Student Grade Generator//
-let marks = 62
+document.getElementById("calculate-button").addEventListener("click", function() {
+  let marks = document.getElementById("marks-input").value;
 
-if (marks > 100 || marks < 0) {
-  console.log("Invalid input. Marks should be between 0 and 100.");
-} else if (marks >= 80) {
-  console.log("Grade: A");
-} else if (marks >= 60) {
-  console.log("Grade: B");
-} else if (marks >= 50) {
-  console.log("Grade: C");
-} else if (marks >= 40) {
-  console.log("Grade: D");
-} else {
-  console.log("Grade: E");
-}
+  let output;
+  if (marks > 100 || marks < 0) {
+    output = "Invalid input. Marks should be between 0 and 100.";
+  } else if (marks >= 80) {
+    output = "Grade: A";
+  } else if (marks >= 60) {
+    output = "Grade: B";
+  } else if (marks >= 50) {
+    output = "Grade: C";
+  } else if (marks >= 40) {
+    output = "Grade: D";
+  } else {
+    output = "Grade: E";
+  }
+
+  document.getElementById("output").textContent = output;
+});
+

@@ -1,8 +1,3 @@
-/* Write a program whose major task is to calculate an individual’s Net Salary      
-by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax),       
-NHIFDeductions, NSSFDeductions, gross salary, and net salary.       
-NB: Use KRA, NHIF, and NSSF values provided in the link below. */
-             
 const KRA_PERSONAL_RELIEF = 2400;
         
 const KRA_INSURANCE_RELIEF = 5000;
@@ -61,10 +56,7 @@ const NSSF_PENSIONABLE_PAY_LIMITS = [
         
 ];
         
-const NSSF_RATE = 0.06;
-        
-
-        
+const NSSF_RATE = 0.06;        
 // Define a function to calculate PAYE
         
 function calculatePAYE(basicSalary, taxablePay) {
@@ -78,9 +70,7 @@ function calculatePAYE(basicSalary, taxablePay) {
  let ooiLimit = KRA_OOI_LIMIT;
         
  let disabilityExemption = KRA_DISABILITY_EXEMPTION;
-        
-
-        
+     
  let annualChargeablePay = annualTaxablePay - annualReliefs - ahRelief - ooiLimit - disabilityExemption;
         
  if (annualChargeablePay <= 0) {
@@ -88,8 +78,6 @@ function calculatePAYE(basicSalary, taxablePay) {
  return 0;
         
  }
-        
-
         
  let paye = 0;
         
@@ -106,15 +94,10 @@ function calculatePAYE(basicSalary, taxablePay) {
  paye = 67200 + (annualChargeablePay - 388000) * 0.3;
         
  }
-        
 
-        
  return paye / 12;
         
-}
-        
-
-        
+}      
 // Define a function to calculate NHIF deduction
         
 function calculateNHIF(grossSalary) {
