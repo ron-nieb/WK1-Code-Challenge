@@ -1,4 +1,4 @@
-//Student Grade Generator//
+//Student Grade Calculator//
 document.getElementById("calculate-button").addEventListener("click", function() {
   let marks = document.getElementById("marks-input").value;
 

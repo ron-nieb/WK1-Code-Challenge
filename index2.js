@@ -1,3 +1,4 @@
+//Speed Checker//
 document.getElementById("check-button").addEventListener("click", function() {
     let speed = document.getElementById("speed-input").value;
 

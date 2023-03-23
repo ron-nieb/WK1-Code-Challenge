@@ -5,28 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Student Grade Generator</title>
-  </head>
-  <body>
-
-    <h1>Student Grade Generator</h1>
-    <label for="marks-input">Enter marks (0-100):</label>
-    <input type="number" id="marks-input" min="0" max="100">
-    <button id="calculate-button">Calculate Grade</button>
-    <p id="output"></p>
-
+        </head>
+       <body>
+       <!-- html file for student generator to display output-->
+       <h1>Student Grade Generator</h1>
+       <label for="marks-input">Enter marks (0-100):</label>
+       <input type="number" id="marks-input" min="0" max="100">
+       <button id="calculate-button">Calculate Grade</button>
+       <p id="output"></p>
+        <!-- html file for speed checker -->
         <h1>Speed Detector</h1>
         <label for="speed-input">Enter speed:</label>
         <input type="number" id="speed-input">
         <button id="check-button">Check Speed</button>
         <p id="output2"></p>
-        
+        <!-- html file for net salary calculator -->
+        <title>Salary Calculator</title>
         <h1>Net Salary Calculator</h1>
-
-        <label for="basicSalary">Basic Salary:</label>
-        <input type="number" id="basicSalary" name="basicSalary" />
-        <button onclick="calculate()">Calculate</button>
-        <h2>Results:</h2>
-        <div id="results"></div>
+        <form id="net1">
+          <label for="salary">Basic Salary:</label>
+          <input type="number" id="salary" name="basicSalary"><br><br>
+          <label for="benefits">Benefits:</label>
+          <input type="number" id="benefits" name="benefits"><br><br>
+          <button id="net1" type="submit">Calculate Net Salary:</button>
+          <li><button onclick="document.location='index3.js'">Net Salary Calculator</button></li>
+        </form>
+        <div id="output3"></div>
+    
         <script src="index3.js"></script>
         <script src="./index.js"></script>
         <script src="index2.js"></script>
